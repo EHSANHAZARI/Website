@@ -1,0 +1,360 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<title> 
+		Whats you role ?
+	</title> 
+</head> 
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+<body style = "text-align:center;"> 
+	
+	<h1 style = "color:green;"> 
+		Role distributor
+	</h1> 
+	
+	<p id = "GFG_UP" style = 
+		"font-size: 15px; font-weight: bold;"> 
+	</p> 
+	
+	<button id = "button" onclick = "GFG_Fun()"> 
+		distribute
+	</button> 
+	<button type="button" onClick="refreshPage()">Refresh the deck</button>
+
+	
+	<p id = "GFG_DOWN" style = 
+		"font-size: 24px; font-weight: bold; color: green;"> 
+	</p> 
+	
+	<div class="form-group">
+		<label for="exampleInputPassword1">Add Role</label>
+		<input type="Role" class="form-control" id="Add" placeholder="Role">
+	  </div>
+
+	  <button id="1" onClick="reply_click(this.id)">Press button to Add a role</button>
+
+	  <div class="form-group">
+		<label for="exampleInputPassword1">Remove Role</label>
+		<input type="Role" class="form-control" id="Remove" placeholder="Role">
+	  </div>
+
+	  
+	  <button id="2" onClick="reply_click2(this.id)">Press button to Remove a role</button>
+
+
+	  <div style="width:400px;border:6px green solid;">
+
+	  <table border="1" width="100%" id="tblNeedsScrolling" >
+		<thead>
+		  <tr>
+			  <th>Night Shot</th>
+			  <th>Doctor Save</th>
+			  <th>Silent</th>
+			  <th>Priest Save</th>
+			  <th>Gun</th>
+			</tr>
+		</thead>
+		<tbody>
+		  <tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+		</tr>
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+		</tr>
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>			
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+		</tr>
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+		  <tr>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>			
+			
+		</tbody>
+	  </table>
+	  
+	  </div>
+
+	  <div>----------------------------------------</div>
+	  
+	 
+	 
+	  <div>-----------------------------------------</div>
+	  <div style="width:400px;border:6px red solid;">
+		<table border="1" width="100%" id="tblNeedsScrolling">
+		  <thead>
+			<tr>
+				<th>Player</th>
+				<th>Role</th>
+			  </tr>
+		  </thead>
+		  <tbody>
+			<tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+		  </tr>
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+		  </tr>
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  </tr>
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  </tr>			
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  </tr>
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+		  </tr>
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  </tr>
+			<tr>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			  </tr>			
+			  <tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+			<tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+			<tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+			<tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+			<tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+			<tr>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+			</tr>
+		  </tbody>
+		</table>
+		
+		</div>
+
+		<div>----------------------------------------</div>
+			
+		   
+		   
+		<div>-----------------------------------------</div>
+  
+
+		<script type="text/javascript">
+		
+		function refreshPage(){
+    window.location.reload();
+} 
+
+	  </script>
+
+		
+
+			<div style="width:400px;border:6px blue solid;">
+				<table border="1" width="100%" id="tblNeedsScrolling">
+				  <thead>
+					<tr>
+						<th>Numbers</th>
+						<th>Role</th>
+					  </tr>
+				  </thead>
+				  <tbody>
+					<tr>
+						<td>number1</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				  </tr>
+					<tr>
+					  <td>number2</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				  </tr>
+					<tr>
+					  <td>number3</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					  </tr>
+					<tr>
+					  <td>number4</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					  </tr>			
+					<tr>
+					  <td>number5</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					  </tr>
+					<tr>
+					  <td>number6</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+				  </tr>
+					<tr>
+					  <td>number7</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					  </tr>
+					<tr>
+					  <td>number8</td>
+					  <td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					  </tr>			
+					  <tr>
+						<td>number9</td>
+						<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					</tr>
+					<tr>
+						<td>number10</td>
+						<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					</tr>
+					<tr>
+						<td>number11</td>
+						<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					</tr>
+					<tr>
+						<td>number12</td>
+						<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					</tr>
+					<tr>
+						<td>number13</td>
+						<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					</tr>
+					<tr>
+						<td>number14</td>
+						<td><input type="name" class="form-control" id="name" placeholder="name"></td>
+					</tr>
+				  </tbody>
+				</table>
+			
+			</div>
+	  
+			
+			
+
+	  
+
+<script type="text/javascript"> 
+		var up = document.getElementById('GFG_UP'); 
+		var down = document.getElementById('GFG_DOWN'); 
+		
+
+		
+
+
+		// Where to add or remove a role
+		var arr = ["God Father", "silencer", 
+				"Negotiator", "Terrorist", "Mafia", "Doctor", "Detective", "Shield", "Reporter", "Sniper","Priest","Loyal 1","Citizen","Citizen2","Citizen3","Loyal 2" ]; 
+		
+		
+			function reply_click()
+		{
+			arr.push(document.getElementById('Add').value);
+			alert(arr);
+		} 
+
+		function reply_click2()
+		{
+			arr = arr.filter(e => e !== document.getElementById('Remove').value);
+			alert(arr);
+		}
+
+
+
+		up.innerHTML = "This is the default roles:    " 
+			 + arr; 
+
+			 
+		
+		function GFG_Fun() { 
+           
+            var newArr = [];
+
+            var indexArr = [];
+
+
+            for (let i = 0; i < arr.length; i++) {
+            
+                // Add the element
+                newArr[i] = arr[Math.floor(Math.random() * arr.length)];
+
+                indexArr[i] = arr.indexOf(newArr[i]); 
+                
+                // If the array index was not negative remove it from the main array
+                if (indexArr[i]> -1) {
+                 arr.splice(indexArr[i], 1);
+                }
+                
+            }
+	
+	           down.innerHTML = newArr;
+
+
+			   function reply_click(clicked_id)
+  
+ 				 {
+      			alert("clicked_id");
+				  }
+
+			   
+		} 
+	</script> 
+
+	 
+</body> 
+
+</html> 
